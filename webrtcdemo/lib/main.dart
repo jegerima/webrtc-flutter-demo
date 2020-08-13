@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webrtcdemo/src/call/call_page.dart';
 import 'package:webrtcdemo/src/pages/video.dart';
 
 void main() => runApp(MyApp());
@@ -22,6 +23,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: VideoPage(),
+      routes: {
+        'call'    : (BuildContext context) => CallPage(),
+      },
     );
   }
 }

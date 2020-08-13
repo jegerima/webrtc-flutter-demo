@@ -93,7 +93,8 @@ class _VideoPageState extends State<VideoPage> {
         },
       ),
       floatingActionButton: new FloatingActionButton(
-        onPressed: _inCalling ? _hangUp : _makeCall,
+        //onPressed: _inCalling ? _hangUp : _makeCall,
+        onPressed: () => Navigator.pushNamed(context, 'call'),
         tooltip: _inCalling ? 'Hangup' : 'Call',
         child: new Icon(_inCalling ? Icons.call_end : Icons.phone),
       ),
